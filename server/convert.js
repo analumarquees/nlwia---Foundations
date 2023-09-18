@@ -26,7 +26,7 @@ export const convert = () =>
         console.log("Vídeo convertido com sucesso!")
 
         resolve(floatArray)
-        //fs.unlinkSync(outputPath)
+        fs.unlinkSync(outputPath)
       })
       .on("error", (error) => {
         console.log("Erro ao converter o vídeo", error)
